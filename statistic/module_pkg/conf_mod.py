@@ -20,6 +20,9 @@ class Config:
             configs = json.load(json_file)
             self.ingredients = self._key_error(configs, 'Ingredients')
             self.pick = self._key_error(configs, 'Pick')
+            self.sheet = self._key_error(configs, 'Google-Sheet')
+            self.sheet_cred = self._key_error(self.sheet, 'cred')
+            self.sheet_id = self._key_error(self.sheet, 'id')
 
     def _key_error(self, configs, key):
         """
@@ -33,7 +36,7 @@ class Config:
         try:
             config_value = configs[key]
         except KeyError:
-            msg = '{} not found in config file'.format(key)
+            msg = '{} - {} not found in config file'.format(configs, key)
             raise configError(msg)
         else:
             return config_value

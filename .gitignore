@@ -130,3 +130,5 @@ dmypy.json
 
 # Custom ignore
 **/config.json
+**/credential.json
+**/token.pickle

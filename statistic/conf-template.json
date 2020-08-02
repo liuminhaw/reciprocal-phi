@@ -4,5 +4,9 @@
         "Name 2": 10,
         "Name 3": 5
     },
-    "Pick": 3
+    "Pick": 3,
+    "Google-Sheet": {
+        "cred": "credential file name",
+        "id": "Spreadsheet id"
+    }
 }
