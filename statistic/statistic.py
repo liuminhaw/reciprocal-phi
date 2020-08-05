@@ -37,7 +37,7 @@ def main():
 
     # Set date data
     current_datetime = datetime.now()
-    format_datetime = current_datetime.strftime('%Y%d%m-%H%M%S')
+    format_datetime = current_datetime.strftime('%Y%m%d-%H%M%S')
 
     # Config info
     logger.info('Sheet: {}'.format(config.sheet))
