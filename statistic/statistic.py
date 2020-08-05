@@ -25,6 +25,8 @@ logger = logcl.PersonalLog('rpdi-statistic', env.LOG_DIR)
 
 def main():
 
+    # TODO: argparse for version information
+
     # Check for config file existence
     try:
         config = conf_mod.Config(env.CONFIG_FILE)

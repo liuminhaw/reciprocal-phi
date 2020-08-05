@@ -5,7 +5,7 @@ import os
 
 
 # Global variable definitions
-VERSION = 'v0.1.0'
+VERSION = 'v0.9.0'
 
 SHEETNAME_PREFIX = 'RPDI'
 
