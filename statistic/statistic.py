@@ -4,6 +4,7 @@
 # Standard library imports
 import os, sys
 import random
+import argparse
 from datetime import datetime
 
 # Local application imports
@@ -25,7 +26,10 @@ logger = logcl.PersonalLog('rpdi-statistic', env.LOG_DIR)
 
 def main():
 
-    # TODO: argparse for version information
+    # arguments definition
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument('-V', '--version', action='version', version='%(prog)s {}'.format(env.VERSION))
+    arg_parser.parse_args()
 
     # Check for config file existence
     try:
